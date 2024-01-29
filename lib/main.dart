@@ -342,7 +342,7 @@ class _MyHomePageState extends State<_MyHomePage> {
             );
           }),
       actions: <Widget>[
-        new FlatButton(
+        new TextButton(
           child: Text("OK"),
           onPressed: () {
             _initializeCamera();
@@ -378,14 +378,14 @@ class _MyHomePageState extends State<_MyHomePage> {
         ],
       ),
       actions: <Widget>[
-        new FlatButton(
+        new TextButton(
             child: Text("Save"),
             onPressed: () {
               _handle(_name.text.toUpperCase());
               _name.clear();
               Navigator.pop(context);
             }),
-        new FlatButton(
+        new TextButton(
           child: Text("Cancel"),
           onPressed: () {
             _initializeCamera();
